@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Davidosky007/Html-capstone#readme",
   "dependencies": {
+    "@glidejs/glide": "^3.4.1",
     "node-sass": "^4.14.1"
   }
 }

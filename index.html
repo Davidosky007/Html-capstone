@@ -3,32 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./Assets/images/andre-beauty-supply.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="./Assets/images/logo5.jpg" type="image/x-icon">
   <title>Andre Beauty Store</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <!-- NAVBAR SECTION -->
 <nav class="navbar navbar-expand-lg navbar-light main-navbar">
   <a class="navbar-brand main-logo-text text-white">
-    <img src="./Assets/images/andre-beauty-supply.svg" alt="andre-beauty-supply" class="main-logo pr-1">
+    <img src="./Assets/images/logo5.jpg" alt="andre-beauty-supply" class="main-logo pr-1">
     Andrez </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav active-home ">
-      <a class="nav-link active " href="#">
+    <div class="navbar-nav active-home d-flex justify-content-between align-center">
+      <a class="nav-link active home-active pl-3" href="#">
         <span class="iconify" data-icon="fa-solid:home" data-inline="false"></span>
         HOME <span class="sr-only"></span></a>
-      <a class="nav-link text-white" href="#">
+      <a class="nav-link text-white pl-3" href="#">
         <span class="iconify" data-icon="gg:menu-grid-r" data-inline="false"></span>
         COLLECTIONS</a>
-      <a class="nav-link text-white" href="#">
+      <a class="nav-link text-white pl-3" href="#">
         <span class="iconify" data-icon="bx:bx-cart-alt" data-inline="false"></span>
         CART</a>
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
+      <a class="nav-link disabled post-ad pl-3" href="#" tabindex="-1" aria-disabled="true">
         <button type="button" class="btn btn-danger">POST AN AD</button>
         </a>
     </div>
@@ -45,7 +45,7 @@
       <a href="#" class="name-text text-white pr-3">Christian Gale</a>
     </div>
     <div class="main-info-image">
-      <img src="./Assets/images/IMG_20201004_084926_1.jpg" class=" user-img" alt="user">
+      <img src="./Assets/images/andrew-c-mccarthy.png" class=" user-img" alt="user">
     </div>
   </div>
 </nav>
@@ -81,14 +81,18 @@
   <!-- HOT ADS SECTION -->
   <section class="hot-ad-main">
   <div class="hot-ad-container">
-    <h3 class="hot-ad-heading"></h3>
-    <div class="hot-ad-wrapper">
-      <figure class="hot-ad-img">
-        <img src="./Assets/images/561301 - Copy - Copy.jpg" alt="hot ad-1" class="ad-img">
+    <h3 class="hot-ad-heading">HOT ADS</h3>
+    <div class="hot-ad-wrapper row">
+      <figure class="hot-ad-img position-relative col-6">
+        <img src="./Assets/images/beauty-4993469_1920.jpg" alt="hot ad-1" class="ad-img">
+        <div class="img-arrow">
+          <a href="#" class="img-arrow-links mr-3"><span class="iconify" data-icon="dashicons:arrow-left-alt2" data-inline="false"></span></a>
+          <a href="#" class="img-arrow-links "><span class="iconify" data-icon="dashicons:arrow-right-alt2" data-inline="false"></span></a>
+        </div>
       </figure>
-      <div class="hot-ad-info">
-        <h4 class="ad-header"></h4>
-        <p class="ad-para"></p>
+      <div class="hot-ad-info col-6">
+        <h4 class="ad-header">Andre Premium Make Up sets</h4>
+        <p class="ad-para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus quibusdam odio. Perspiciatis inventore recusandae pariatur corrupti rem. Quase laboriosam?</p>
         <div class="ad-second-para">
           <p class="ad-para-1">
             By:
@@ -100,9 +104,58 @@
           </p>
 
         </div>
+
+        <div class="hot-purchase">
+          <span class="hot-price">$80</span>
+          <a href="#" class="hot-purchase-btn"><span class="iconify" data-icon="bx:bx-cart-alt" data-inline="false"></span>
+          <span>Add To Cart</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
+  <div class="hot-ad-arrow">
+    <a href="#" class="arrow-links"><span class="iconify" data-icon="dashicons:arrow-left-alt2" data-inline="false"></span></a>
+    <a href="#" class="arrow-links"><span class="iconify" data-icon="dashicons:arrow-right-alt2" data-inline="false"></span></a>
+  </div>
+  </section>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="product-main">
+    <!-- Perfumes Section -->
+    <div class="perfume-product-main">
+      <div class="perfume-product-title">
+        <h3 class="perfume-product-heading mr-3 text-dark">
+          <span class="iconify" data-icon="whh:perfume" data-inline="false"></span>
+          Fragrance
+        </h3>
+        <p class="perfume-product-para">( Lorem ipsum dolor sit aes, officia eius aspernatur quia excepturi officiis itaque! )</p>
+      </div>
+      <hr>
+    </div>
+    <div class="perfume-carousel">
+      <div class="perfume-carousel-wrapper">
+        <article class="perfume-article-wrapper">
+        <figure class="perfume-img-wrapper">
+        <img src="./Assets/images/pef-1.jpg" alt="pef-1" class="carousel-img">
+        </figure>
+        <div class="carousel-info">
+          <h5 class="carousel-heading">
+            <a href="#" class="caro-link">MADEMOISELLE</a>
+          </h5>
+          <div class="prefume-status">New</div>
+          <div class="prefume-brand">CHANEL</div>
+        </div>
+        <div class="carousel-footer">
+        <div class="btn-sect">
+          <div class="foot-btn">
+            <span class="iconify" data-icon="clarity:add-line" data-inline="false"></span>
+          </div>
+        </div>
+        </div>
+        </article>
+      </div>
+    </div>
   </section>
 </main>
 

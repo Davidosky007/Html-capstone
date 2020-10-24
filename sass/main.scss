@@ -1,8 +1,34 @@
+// CSS RESET
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+// VARIABLES
+
 $primary-color: #d35266;
 $secondary-color: #888;
 $tertiary-color: #383838;
+$light-grey: #f6f6f6;
 $color-white: #fff;
 $font-size-1: 1.5rem;
+
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: $tertiary-color;
+  letter-spacing: 0.2px;
+  font-family: Pragmatica;
+}  
+
+img{
+  object-fit: cover;
+}  
 
 
 
@@ -70,8 +96,12 @@ a:hover{
   font-family: free FreeSansBold;
 }
 
-.active-home a {
-  color: $primary-color;
+.home-active{
+  color: $primary-color !important;
+}
+
+.post-ad{
+  padding-top: 0px;
 }
 
 .main-info-mail svg{
@@ -110,6 +140,7 @@ color: $color-white;
 .user-img{
   width: 30px;
   border-radius: 50px;
+  object-fit: cover;
 }
 
 .search-section{
@@ -186,3 +217,201 @@ select {
   margin-left: 2rem;
   text-align: center;
 }
+
+.hot-ad-main{
+  width: 97%;
+  margin: 0 auto;
+  max-width: 120rem;
+  position: relative;
+  padding: 3rem 0 3rem 0;
+}
+
+.hot-ad-container {
+  width: 76%;
+  margin: 0 auto;
+}
+
+.hot-ad-heading{
+  font-size: 1.5rem;
+}
+
+.ad-img{
+  width: 74%;
+  object-fit: cover;
+}
+
+.img-arrow {
+  background-color: #383838;
+  padding-left: 15px;
+  padding-top: 6px;
+  position: absolute;
+  bottom: 0px;
+  right: 140px;
+  width: 6rem;
+  height: 2rem;
+}
+.img-arrow:hover{
+  opacity: 0.6;
+}
+
+.img-arrow-links{
+  color: $primary-color;
+  font-size: 1.3rem;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.ad-second-para{
+  font-weight: 600;
+}
+
+.ad-para-1 span {
+  font-weight: 400;
+}
+
+.ad-header{
+  color: $primary-color;
+  font-size: 2rem;
+}
+
+.hot-purchase{
+    max-width: 26rem;
+    background-color: #d35266;
+    border-radius: 0.2rem;
+    display: flex;
+  }
+
+  .hot-price{
+        color: #fff;
+        border-right: 1px solid #777;
+        padding: 0 3.5rem;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+  }
+
+  .hot-purchase-btn{
+    color: #fff;
+    padding: 0 3.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .hot-ad-arrow{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    top: 185px;
+  }
+
+  .arrow-links{
+    border: 1px solid #ccc;
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $primary-color;
+  }
+
+  .product-main{
+    width: 100%;
+    background-color: $light-grey;
+  }
+
+  .perfume-product-main{
+    padding: 3rem 0 4rem 0;
+    max-width: 62.1543125rem;
+    margin: 0 auto;
+  }
+
+  .perfume-product-title{
+    display: flex;
+    align-items: center;
+  }
+
+  .perfume-product-para{
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(158, 156, 156);
+  }
+
+  .perfume-product-heading{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .perfume-product-heading .iconify{
+    margin-right: 1rem;
+  }
+
+.carousel-info {
+  display: block;
+  height: auto;
+  text-align: left;
+  margin-top: -15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+  width: 12.375rem;
+  padding-bottom: 3.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+  .perfume-carousel-wrapper{
+    grid-template-columns: repeat (5, 1fr);
+  padding: 3rem 0 4rem 0;
+  max-width: 62.1543125rem;
+  margin: 0 auto;
+  }
+
+  .carousel-img{
+    width: 12.375rem;
+  }
+
+  .carousel-heading{
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    font-weight: 700;
+  }
+
+  .prefume-status{
+    font-size: 0.9rem;
+    color: $primary-color;
+  }
+
+  .prefume-brand{
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+
+  .carousel-footer{
+        width: 100%;
+        display: flex;
+        padding: 0 1rem 1rem 1rem;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0.5rem;
+        position: absolute;
+        bottom: 0
+  }
+
+  .foot-btn{
+        border: 1px solid #777;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #777;
+        cursor : pointer;
+        z-index: 1;
+        background-color: transparent;
+  }

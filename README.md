@@ -28,7 +28,7 @@ Project video presentation here:
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://davidosky007.github.io/Html-capstone/)
 
 ## Getting Started
 
@@ -57,9 +57,10 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **David BASSEY**
 
-- GitHub: [@Igors78](https://github.com/Igors78)
-- Twitter: [@oleinikovs](https://twitter.com/oleinikovs)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/igors-oleinikovs-17a10958/)
+
+- GitHub: [@davidosky007](https://github.com/davidosky007)
+- Twitter: [@davidosky2](https://twitter.com/Davidosky2)
+- LinkedIn: [David Bassey](https://www.linkedin.com/in/david-bassey-2b9671199/)
 
 ## 🤝 Contributing
 
