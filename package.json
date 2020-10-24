@@ -1,0 +1,23 @@
+{
+  "name": "html-capstone",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass  sass/main.scss css/style.css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davidosky007/Html-capstone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davidosky007/Html-capstone/issues"
+  },
+  "homepage": "https://github.com/Davidosky007/Html-capstone#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
