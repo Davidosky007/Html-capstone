@@ -306,13 +306,14 @@ select {
 }
 
 .perfume-product-main {
-  padding: 3rem 0 4rem 0;
-  max-width: 62.1543125rem;
+  padding: 1rem 0 0rem 0;
+  max-width: 76%;
   margin: 0 auto;
 }
 
 .perfume-product-title {
   display: flex;
+  margin-bottom: -17px;
   align-items: center;
 }
 
@@ -333,61 +334,31 @@ select {
   margin-right: 1rem;
 }
 
-.carousel-info {
-  display: block;
-  height: auto;
-  text-align: left;
-  margin-top: -15px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  margin-bottom: 3rem;
-  position: relative;
-  z-index: 1;
-  width: 12.375rem;
-  padding-bottom: 3.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.perfume-carousel-wrapper {
-  grid-template-columns: repeat 5, 1fr;
-  padding: 3rem 0 4rem 0;
-  max-width: 62.1543125rem;
+.carousel-main {
+  padding-top: 6px;
+  max-width: 76%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
 }
 
-.carousel-img {
+.img-wrap {
   width: 12.375rem;
 }
 
-.carousel-heading {
-  font-size: 1rem;
-  padding-top: 0.5rem;
-  font-weight: 700;
+.card {
+  width: 15rem;
 }
 
-.prefume-status {
-  font-size: 0.9rem;
-  color: #d35266;
-}
-
-.prefume-brand {
-  font-size: 0.9rem;
-  font-weight: 300;
-}
-
-.carousel-footer {
+.card-img-top {
+  flex-shrink: 0;
   width: 100%;
-  display: flex;
-  padding: 0 1rem 1rem 1rem;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 0.5rem;
-  position: absolute;
-  bottom: 0;
+  height: 13rem;
+  object-fit: contain;
 }
 
-.foot-btn {
+.add-btn {
   border: 1px solid #777;
   width: 2rem;
   height: 2rem;
@@ -398,4 +369,51 @@ select {
   cursor: pointer;
   z-index: 1;
   background-color: transparent;
+}
+
+.status {
+  color: #d35266;
+}
+
+.brand {
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  color: #d35266;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 1100px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 0;
+}
+
+.carousel-control-links {
+  height: 100%;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
+}
+
+.carousel-control-links-1 {
+  height: 100%;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
+}
+
+.carousel-controls .iconify {
+  font-size: 2.6rem;
 }
