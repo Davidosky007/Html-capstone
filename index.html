@@ -34,7 +34,7 @@
     </div>
   </div>
 
-  <div class="main-nav-info d-flex justify-content-end position-relative">
+  <div class="main-nav-info d-sm-none d-lg-flex justify-content-end position-relative d-none">
     <div class="main-info-mail pr-3">
     <a href="#">
         <span class="iconify" data-icon="ic:outline-mark-email-unread" data-inline="false"></span>
@@ -50,9 +50,9 @@
   </div>
 </nav>
 
-<!-- HEADER SECTION -->
+<!-- SEARCH AREA SECTION -->
 <main class="main-container">
-  <div class="search-section">
+  <div class="search-section ">
     <div class="search-area">
       <h1 class="search-section-header">Andrez</h1>
       <h5 class="search-section-header-sub">Your One Stop Beauty Shop</h5>
@@ -62,17 +62,9 @@
         <option value="Make Up"> Make Up</option>
         <option value="Hair">Hair</option>
         <option value="Brands"> Brands</option>
-        <option value="Men"> Men</option>
-        <option value="Body Tools"> Body Tools</option>
-        <option value="Cleansers"> Cleansers</option>
-        <option value="Vegan Skin Care Tools">Vegan Skin Care Tools</option>
-        <option value="Fragrance">Fragrance</option>
-        <option value="Offers">Offers</option>
-        <option value="Well Beign">Well Beign</option>
-        <option value="Blog">Blog</option>
       </select>
-      <input type="text" placeholder="Search For Beauty Brands" class="search-input">
-      <input type="text" placeholder="Search For Hot Deals" class="search-input">
+      <input type="text" placeholder="Search here" class="search-input">
+      <input type="text" placeholder="Search here" class="search-input">
       <a href="result.html" class="search-result-btn"> Search</a>
       </form>
     </div>
@@ -88,14 +80,14 @@
       <div class="hot-ad-container">
     <h3 class="hot-ad-heading">HOT ADS</h3>
     <div class="hot-ad-wrapper row">
-      <figure class="hot-ad-img position-relative col-6">
+      <figure class="hot-ad-img position-relative col-12 col-sm-6">
         <img src="./Assets/images/beauty-4993469_1920.jpg" alt="hot ad-1" class="ad-img">
-        <div class="img-arrow">
+        <div class="img-arrow d-none">
           <a href="#" class="img-arrow-links mr-3"><span class="iconify" data-icon="dashicons:arrow-left-alt2" data-inline="false"></span></a>
           <a href="#" class="img-arrow-links "><span class="iconify" data-icon="dashicons:arrow-right-alt2" data-inline="false"></span></a>
         </div>
       </figure>
-      <div class="hot-ad-info col-6">
+      <div class="hot-ad-info col-12 col-sm-6">
         <h4 class="ad-header">Andre Premium Make Up sets</h4>
         <p class="ad-para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus quibusdam odio. Perspiciatis inventore recusandae pariatur corrupti rem. Quase laboriosam?</p>
         <div class="ad-second-para">
@@ -125,14 +117,14 @@
          <div class="hot-ad-container">
     <h3 class="hot-ad-heading">HOT ADS</h3>
     <div class="hot-ad-wrapper row">
-      <figure class="hot-ad-img position-relative col-6">
-        <img src="./Assets/images/hair-care-4541744_1920.jpg" alt="hot ad-1" class="ad-img">
-        <div class="img-arrow">
+      <figure class="hot-ad-img position-relative col-12 col-sm-6">
+        <img src="./Assets/images/hair-care-4541744_1920.jpg" alt="hot ad-1" class="ad-img-1">
+        <div class="img-arrow d-none">
           <a href="#" class="img-arrow-links mr-3"><span class="iconify" data-icon="dashicons:arrow-left-alt2" data-inline="false"></span></a>
           <a href="#" class="img-arrow-links "><span class="iconify" data-icon="dashicons:arrow-right-alt2" data-inline="false"></span></a>
         </div>
       </figure>
-      <div class="hot-ad-info col-6">
+      <div class="hot-ad-info col-12 col-sm-6">
         <h4 class="ad-header">Andre Premium Make Up sets</h4>
         <p class="ad-para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus quibusdam odio. Perspiciatis inventore recusandae pariatur corrupti rem. Quase laboriosam?</p>
         <div class="ad-second-para">
@@ -161,14 +153,14 @@
     <div class="hot-ad-container">
     <h3 class="hot-ad-heading">HOT ADS</h3>
     <div class="hot-ad-wrapper row">
-      <figure class="hot-ad-img position-relative col-6">
-        <img src="./Assets/images/beauty-4993469_1920.jpg" alt="hot ad-1" class="ad-img">
-        <div class="img-arrow">
+      <figure class="hot-ad-img position-relative col-12 col-sm-6">
+        <img src="./Assets/images/beauty-4993469_1920.jpg" alt="hot ad-1" class="ad-img-2">
+        <div class="img-arrow d-none">
           <a href="#" class="img-arrow-links mr-3"><span class="iconify" data-icon="dashicons:arrow-left-alt2" data-inline="false"></span></a>
           <a href="#" class="img-arrow-links "><span class="iconify" data-icon="dashicons:arrow-right-alt2" data-inline="false"></span></a>
         </div>
       </figure>
-      <div class="hot-ad-info col-6">
+      <div class="hot-ad-info col-12 col-sm-6">
         <h4 class="ad-header">Andre Premium Make Up sets</h4>
         <p class="ad-para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus quibusdam odio. Perspiciatis inventore recusandae pariatur corrupti rem. Quase laboriosam?</p>
         <div class="ad-second-para">
@@ -452,7 +444,96 @@
 </main>
 
 <!-- FOOTER SECTION -->
-
+<footer class="footer-wrapper-main">
+  <div class="footer-wrapper">
+  <div class="f-w-1">
+    <a href="#" class="footer-logo main-logo-text text-dark">
+      <img src="./Assets/images/logo5.jpg" alt="" class="main-logo">
+      Andrez
+    </a>
+    <p class="f-text">Lorem ipsum dolor sit amet olorum esse asperiores? Quibusdam molestias facere quaerat commodi in, ipsum nostrum dolorem soluta? Fuga quos cumque ducimus illum?</p>
+  </div>
+  <div class="f-w-2">
+    <h5 class="f-w-2-header">Cartegories</h5>
+    <hr>
+    <div class="f-w-container-list">
+      <ul class="f-w-list">
+        <li class="f-w-item"><a href="#" class="f-links">Skin Care</a></li>
+        <li class="f-w-item"><a href="#" class="f-links">Make Up</a></li>
+        <li class="f-w-item"><a href="#" class="f-links">Fragrance</a></li>
+        <li class="f-w-item"><a href="#" class="f-links">Hair Care</a></li>
+        <li class="f-w-item"><a href="#" class="f-links">Bath & Body</a></li>
+      </ul>
+      <ul class="f-w-list">
+        <li class="f-w-item"><a href="#" class="f-links">Beauty Brands</a></li>
+        <li class="f-w-item"><a href="#" class="f-links">Natural Beauty & Wellness</a></li>
+        <li class="f-w-item"><a href="#" class="f-links">Gifts & Sets</a></li>
+        <li class="f-w-item"><a href="#" class="f-links">Face Moisturizers</a></li>
+        <li class="f-w-item"><a href="#" class="f-links">Eye Creams & Treatments</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="f-w-3">
+    <h5 class="f-w-2-header">Navigation</h5>
+    <hr>
+    <div class="f-w-container-list">
+      <ul class="f-w-list">
+        <li class="f-w-item"><a href="#" class="f-links">About Us</a></li>
+        <li class="f-w-item"><a href="#" class="f-links">Sign Up</a></li>
+        <li class="f-w-item"><a href="#" class="f-links">Sign In</a></li>
+        <li class="f-w-item"><a href="#" class="f-links">Services</a></li>
+        <li class="f-w-item"><a href="#" class="f-links">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="f-w-4">
+    <div class="f-w-country">
+      <h5 class="f-w-2-header">Country</h5>
+      <select name="country" id="country" class="country-d-d">
+        <option value="Nigeria" class="f-w-option">Nigeria</option>
+        <option value="Japan" class="f-w-option">Japan</option>
+        <option value="US" class="f-w-option">US</option>
+        <option value="England" class="f-w-option">England</option>
+      </select>
+    </div>
+    <div class="f-w-country">
+      <h5 class="f-w-2-header">Language</h5>
+      <select name="language" id="language" class="country-d-d">
+        <option value="English" class="f-w-option">English</option>
+        <option value="French" class="f-w-option">French</option>
+        <option value="Spanish" class="f-w-option">Spanish</option>
+        <option value="Portugees" class="f-w-option">Portugees</option>
+      </select>
+    </div>
+    <div class="f-w-country">
+      <h5 class="f-w-2-header">Currency</h5>
+      <select name="language" id="language" class="country-d-d">
+        <option value="English" class="f-w-option">USD</option>
+        <option value="French" class="f-w-option">Naira</option>
+        <option value="Spanish" class="f-w-option">Euro</option>
+        <option value="Portugees" class="f-w-option">YEN</option>
+      </select>
+    </div>
+  </div>
+  </div>
+  <!-- FOTTER BOTTOM SECTION -->
+  <div class="bottom-main-footer">
+    <div class="main-bottom-wrap">
+      <div class="bottom-right">
+        Copyright © 2020 ANDREZ Beauty Stores All Rights Reserved. Built by
+        <a href="https://github.com/Davidosky007/Html-capstone">David Bassey</a>
+      </div>
+    <div class="bottom-left">
+      <ul class="social-list">
+        <li class="social-items"><a href="#"><span class="iconify" data-icon="bx:bxl-facebook" data-inline="false"></span></a></li>
+        <li class="social-items"><a href="#"><span class="iconify" data-icon="ant-design:twitter-outlined" data-inline="false"></span></a></li>
+        <li class="social-items"><a href="#"><span class="iconify" data-icon="feather:instagram" data-inline="false"></span></a></li>
+        <li class="social-items"><a href="#"><span class="iconify" data-icon="la:linkedin-in" data-inline="false"></span></a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</footer>
 
 
   

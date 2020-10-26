@@ -1,4 +1,4 @@
 node_modules/
-package-lock.json
-prepros.config
-glide-3.4.1/
+*.json
+*.config
+glide/
