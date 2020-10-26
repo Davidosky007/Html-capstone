@@ -85,6 +85,11 @@ a:hover {
   padding-top: 0px;
 }
 
+.btn-post {
+  color: #fff;
+  background-color: #d35266;
+}
+
 .main-info-mail svg {
   font-size: 30px;
   color: #fff;
@@ -201,6 +206,10 @@ select {
   text-align: center;
 }
 
+main {
+  background-color: #F6F6F6;
+}
+
 .result-container {
   border-right: 1px solid #ccc;
   border-left: 1px solid #ccc;
@@ -209,4 +218,20 @@ select {
   max-width: 120rem;
   margin: 0 auto;
   display: flex;
+  padding-top: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.result-des {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.result-option-main {
+  margin-bottom: 1rem;
+}
+
+.result-display {
+  border-left: 1px solid #ccc;
 }

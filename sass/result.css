@@ -1,40 +1,27 @@
-// CSS RESET
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
-// VARIABLES
-
-$primary-color: #d35266;
-$secondary-color: #888;
-$tertiary-color: #383838;
-$light-grey: #f6f6f6;
-$color-white: #fff;
-$font-size-1: 1.5rem;
-
-
 
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  color: $tertiary-color;
+  color: #383838;
   letter-spacing: 0.2px;
   font-family: Pragmatica;
 }
 
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-
-
-
 
 @font-face {
   font-family: "Gotham";
@@ -73,9 +60,8 @@ body {
 
 a {
   text-decoration: none;
-  color: $tertiary-color;
+  color: #383838;
   -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
   transition: all 0.4s;
 }
 
@@ -85,7 +71,7 @@ a:hover {
 }
 
 .main-navbar {
-  background-color: $tertiary-color;
+  background-color: #383838;
   padding-left: 40px;
 }
 
@@ -100,42 +86,45 @@ a:hover {
 }
 
 .home-active {
-  color: $primary-color !important;
+  color: #d35266 !important;
 }
 
 .post-ad {
   padding-top: 0px;
 }
 
-.btn-post {
-  color: #fff;
-  background-color: $primary-color;
-}
-
 .main-info-mail svg {
   font-size: 30px;
-  color: $color-white;
+  color: #fff;
 }
 
 .unread-num {
   position: absolute;
-  color: $color-white;
+  color: #fff;
   font-size: 10px;
   top: 2px;
   left: 18px;
-  background-color: $primary-color;
+  background-color: #d35266;
   padding: 2px;
   width: 12px;
   font-weight: 800;
   height: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 3px;
 }
 
 .main-nav-info {
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 50px;
 }
 
@@ -144,17 +133,16 @@ a:hover {
   text-decoration: none;
 }
 
-
 .user-img {
   width: 30px;
   border-radius: 50px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-// search page section
 .search-section {
   padding: 6rem 0 4rem 0;
-  background-color: $primary-color;
+  background-color: #d35266;
 }
 
 .search-area {
@@ -164,24 +152,38 @@ a:hover {
 }
 
 .search-area-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .search-section-header {
   font-size: 49px;
   font-weight: 700;
-  color: $color-white;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .search-section-header-sub {
   font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  color: $color-white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
   margin-bottom: 60px;
 }
 
@@ -193,11 +195,13 @@ select {
 }
 
 .search-dropdown {
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: none;
   outline: none;
   line-height: 1;
-  font-size: $font-size-1;
+  font-size: 1.5rem;
   background-color: #fff;
   font-family: inherit;
   margin-right: 1px;
@@ -207,10 +211,11 @@ select {
   font-family: Gotham Sans;
 }
 
-
 .search-input {
   padding: 1rem 1rem 1rem 2.4rem;
-  appearance: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: none;
   outline: none;
   margin-right: 1px;
@@ -218,8 +223,8 @@ select {
 }
 
 .search-result-btn {
-  background-color: $tertiary-color;
-  color: $secondary-color;
+  background-color: #383838;
+  color: #888;
   padding: 13px;
   font-size: 20px;
   width: 9rem;
@@ -227,36 +232,16 @@ select {
   text-align: center;
 }
 
-// RESULT CONTAINER
-
-main{
-  background-color: #F6F6F6;
-}
-
-.result-container{
-      border-right: 1px solid #ccc;
-      border-left: 1px solid #ccc;
-      position: relative;
-        width: 94%;
-        max-width: 120rem;
-        margin: 0 auto;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        padding-top: 2rem;
-        padding-right: 2rem;
-        padding-left: 2rem;
-}
-
-.result-des {
-  border-bottom: 1px solid #ccc;
-  padding: 1rem;
-}
-
-.result-option-main {
-  margin-bottom: 1rem;
-}
-
-.result-display {
+.result-container {
+  border-right: 1px solid #ccc;
   border-left: 1px solid #ccc;
+  position: relative;
+  width: 94%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2rem;
 }
+/*# sourceMappingURL=result.css.map */
