@@ -278,10 +278,11 @@ select {
 .hot-price {
   color: #fff;
   border-right: 1px solid #777;
-  padding: 0 3.5rem;
+  padding: 0 3.6rem;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
+  height: 2rem;
 }
 
 .hot-purchase span {
@@ -290,10 +291,11 @@ select {
 
 .hot-purchase-btn {
   color: #fff;
-  padding: 0 3.5rem;
+  padding: 0 3.6rem;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
+  height: 2rem;
 }
 
 .hot-ad-arrow {
@@ -624,6 +626,7 @@ select {
     background-color: #fff;
     font-family: inherit;
     margin-right: 1px;
+    width: 17rem;
   }
 
   .search-dropdown option {

@@ -205,4 +205,8 @@ select {
   border-right: 1px solid #ccc;
   border-left: 1px solid #ccc;
   position: relative;
+  width: 94%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
 }
