@@ -601,6 +601,12 @@ select {
 
   .f-w-list {
     padding-right: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .f-text {
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
 }
 @media (max-width: 767.98px) {
