@@ -72,7 +72,7 @@ body{
 
 a {
   text-decoration: none;
-    color: $tertiary-color;
+    color: $secondary-color;
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
@@ -81,6 +81,7 @@ a {
 a:hover{
       opacity: 0.8;
       text-decoration: none;
+      color: $color-white;
 }
 
 // NAVBAR SECTION
@@ -185,7 +186,7 @@ color: $color-white;
 }
 
 select {
-  background: #fff url(https://api.iconify.design/ant-design:caret-down-filled.svg) no-repeat;
+  background: $color-white url(https://api.iconify.design/ant-design:caret-down-filled.svg) no-repeat;
   background-position: 0.5rem center;
   padding: 1rem 1rem 1rem 2.4rem;
   line-height: 1;
@@ -197,7 +198,7 @@ select {
   outline: none;
   line-height: 1;
   font-size: $font-size-1;
-  background-color: #fff;
+  background-color: $color-white;
   font-family: inherit;
   margin-right: 1px;
 }
@@ -292,13 +293,13 @@ select {
 
 .hot-purchase{
     max-width: 26rem;
-    background-color: #d35266;
+    background-color: $primary-color;
     border-radius: 0.2rem;
     display: flex;
   }
 
   .hot-price{
-        color: #fff;
+        color: $color-white;
         border-right: 1px solid #777;
         padding: 0 3.6rem;
         font-size: 1.5rem;
@@ -312,7 +313,7 @@ select {
   }
 
   .hot-purchase-btn{
-    color: #fff;
+    color: $color-white;
     padding: 0 3.6rem;
     font-size: 1.5rem;
     display: flex;
@@ -440,7 +441,7 @@ select {
 
   .carousel-control-links {
         height: 100%;
-        width: 3rem;
+        width: 2rem;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -453,7 +454,7 @@ select {
 
   .carousel-control-links-1{
     height: 100%;
-    width: 3rem;
+    width: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -465,11 +466,11 @@ select {
   }
 
   .carousel-controls .iconify{
-    font-size: 2.6rem;
+    font-size: 1.6rem;
   }
 
   // FOOTER SECTION
-  .footer-wrapper{
+  .footer-wrapper {
     width: 100%;
     background-color: #fff;
     padding-top: 2rem;
@@ -486,49 +487,51 @@ select {
     color: $primary-color;
   }
 
-  .f-w-container-list{
+  .f-w-container-list {
     display: flex;
     justify-content: space-between;
     line-height: 2rem;
   }
 
-  .f-w-list{
-    font-size: 0.8rem;
+  .f-w-list {
+    font-size: 1rem;
   }
 
-  .f-w-4{
+  .f-w-4 {
     padding-top: 2rem;
   }
 
-  .f-w-country{
+  .f-w-country {
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
   }
 
-  .country-d-d{
-  appearance: none;
-  width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  font-size: 0.8rem;
+  .country-d-d {
+    appearance: none;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 0.8rem;
   }
 
-  .f-w-2-header{
+  .f-w-2-header {
     padding-right: 0.8rem;
     font-size: 1rem;
   }
-  .f-w-option{
+
+  .f-w-option {
     font-size: 0.8rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .bottom-main-footer{
-        border-top: 1px solid #ccc;
+
+  .bottom-main-footer {
+    border-top: 1px solid #ccc;
   }
 
-  .main-bottom-wrap{
+  .main-bottom-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -538,27 +541,29 @@ select {
     font-size: 0.8rem;
     padding: 1rem;
   }
- .bottom-left {
-   max-width: 16rem;
-   width: 100%;
-   padding: 1rem 0;
- }
 
-  .f-text{
-    font-size: 0.8rem;
+  .bottom-left {
+    max-width: 16rem;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .f-text {
+    font-size: 1rem;
     line-height: 1.3rem;
   }
 
-  .social-list{
+  .social-list {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
 
-  .social-items{
+  .social-items {
     font-size: 1.5rem;
     color: $secondary-color;
   }
+
 
 
   // MEDIA QUERIES
@@ -575,7 +580,7 @@ select {
   }
   .footer-wrapper {
     width: 100%;
-    background-color: #fff;
+    background-color: $color-white;
     padding-top: 2rem;
     border-top: 1px solid #ccc;
     margin-bottom: 2.5rem;
@@ -606,7 +611,7 @@ select {
     }
 
     .hot-purchase-btn {
-      color: #fff;
+      color: $color-white;
       padding: 0 2rem;
       font-size: 1rem;
       display: flex;
@@ -614,7 +619,7 @@ select {
     }
 
     .hot-price{
-      color: #fff;
+      color: $color-white;
       padding: 0 2rem;
       font-size: 1rem;
       display: flex;
@@ -627,6 +632,10 @@ select {
       border-radius: 0.2rem;
       display: flex;
       padding: 0.5rem;
+    }
+
+    .f-w-list {
+          padding-right: 0.8rem;
     }
 
   }
@@ -666,7 +675,7 @@ select {
       outline: none;
       line-height: 1;
       font-size: 1.5rem;
-      background-color: #fff;
+      background-color: $color-white;
       font-family: inherit;
       margin-right: 1px;
       width: 17rem;
@@ -690,7 +699,7 @@ select {
       font-size: 25px;
       display: flex;
       justify-content: center;
-      color: #fff;
+      color: $color-white;
       margin-bottom: 60px;
     }
 
@@ -745,7 +754,7 @@ select {
     }
 
      .hot-purchase-btn {
-      color: #fff;
+      color: $color-white;
       padding: 0px;
        font-size: 1.5rem;
        display: flex;
@@ -789,5 +798,15 @@ select {
      .card {
        width: 18rem;
        margin-bottom: 1.5rem;
+     }
+     .arrow-links {
+       border: 1px solid #ccc;
+       width: 1.6rem;
+       height: 1.6rem;
+       border-radius: 50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       color: #d35266;
      }
   }

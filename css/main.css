@@ -53,13 +53,14 @@ body {
 
 a {
   text-decoration: none;
-  color: #383838;
+  color: #888;
   transition: all 0.4s;
 }
 
 a:hover {
   opacity: 0.8;
   text-decoration: none;
+  color: #fff;
 }
 
 .main-navbar {
@@ -422,7 +423,7 @@ select {
 
 .carousel-control-links {
   height: 100%;
-  width: 3rem;
+  width: 2rem;
   display: flex;
   align-items: center;
   box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
@@ -430,14 +431,14 @@ select {
 
 .carousel-control-links-1 {
   height: 100%;
-  width: 3rem;
+  width: 2rem;
   display: flex;
   align-items: center;
   box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
 }
 
 .carousel-controls .iconify {
-  font-size: 2.6rem;
+  font-size: 1.6rem;
 }
 
 .footer-wrapper {
@@ -464,7 +465,7 @@ select {
 }
 
 .f-w-list {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .f-w-4 {
@@ -521,7 +522,7 @@ select {
 }
 
 .f-text {
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.3rem;
 }
 
@@ -596,6 +597,10 @@ select {
     border-radius: 0.2rem;
     display: flex;
     padding: 0.5rem;
+  }
+
+  .f-w-list {
+    padding-right: 0.8rem;
   }
 }
 @media (max-width: 767.98px) {
@@ -750,5 +755,16 @@ select {
   .card {
     width: 18rem;
     margin-bottom: 1.5rem;
+  }
+
+  .arrow-links {
+    border: 1px solid #ccc;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d35266;
   }
 }
