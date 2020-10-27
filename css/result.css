@@ -7,20 +7,6 @@
   list-style: none;
 }
 
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  color: #383838;
-  letter-spacing: 0.2px;
-  font-family: Pragmatica;
-}
-
-img {
-  object-fit: cover;
-}
-
 @font-face {
   font-family: "Gotham";
   src: url("../fonts/BOLD/HomepageBaukasten-Bold.otf") format("opentype"), url("../fonts/BOLD/HomepageBaukasten-Bold.ttf") format("truetype");
@@ -47,8 +33,19 @@ img {
   font-weight: 700;
 }
 body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: #383838;
+  letter-spacing: 0.2px;
+  font-family: "Pragmatica Medium";
   width: 100%;
   margin: 0 auto;
+}
+
+img {
+  object-fit: cover;
 }
 
 a {
@@ -60,7 +57,7 @@ a {
 a:hover {
   opacity: 0.8;
   text-decoration: none;
-  color: #fff;
+  color: #383838;
 }
 
 .main-navbar {
@@ -75,7 +72,8 @@ a:hover {
 }
 
 .main-logo-text {
-  font-family: free FreeSansBold;
+  font-family: "Free Sans Bold";
+  font-size: 1.6rem;
 }
 
 .home-active {
@@ -83,7 +81,7 @@ a:hover {
 }
 
 .post-ad {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .btn-post {
@@ -119,7 +117,7 @@ a:hover {
 }
 
 .name-text {
-  font-family: free FreeSansBold;
+  font-family: "Free Sans Bold";
   text-decoration: none;
 }
 
@@ -183,7 +181,7 @@ select {
 }
 
 .search-dropdown option {
-  font-family: Gotham Sans;
+  font-family: "Gotham";
 }
 
 .search-input {
@@ -208,7 +206,7 @@ select {
 }
 
 main {
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 .result-container {
@@ -284,21 +282,21 @@ main {
 }
 
 .des-bottom-purchase {
-  max-width: 20rem;
+  max-width: 22rem;
   background-color: #d35266;
   border-radius: 0.2rem;
   display: flex;
 }
 
 .des-bottom-purchase span {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .purchase-price {
   color: #fff;
   border-right: 1px solid #777;
-  padding: 0 3.5rem;
-  font-size: 1.3rem;
+  padding: 0 1rem;
+  font-size: 1rem;
   display: flex;
   align-items: center;
 }
@@ -345,7 +343,8 @@ main {
   height: 1.8rem;
 }
 
-.result-page-link:hover, .result-page-link.active {
+.result-page-link:hover,
+.result-page-link.active {
   background-color: #d35266;
   color: #fff;
   border-color: #d35266;
@@ -446,4 +445,259 @@ main {
 .social-items {
   font-size: 1.5rem;
   color: #888;
+}
+
+@media (max-width: 991.98px) {
+  .des-image {
+    width: 14rem;
+    object-fit: cover;
+    height: 14rem;
+  }
+
+  .search-options {
+    width: 48%;
+  }
+
+  .result-header {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .result-des-para {
+    font-size: 0.9rem;
+  }
+
+  .checkbox-label {
+    font-size: 0.9rem;
+  }
+
+  .des-catlog-heading {
+    font-family: "Free Sans Bold", sans-serif;
+    font-size: 1rem;
+  }
+
+  .des-catlog-status {
+    font-family: "Free Sans Bold", sans-serif;
+    color: #d35266;
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+  .purchase-price {
+    color: #fff;
+    border-right: 1px solid #777;
+    padding: 0 2rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .des-bottom-purchase span {
+    font-size: 0.8rem;
+  }
+
+  .add-to-cart-btn {
+    color: #fff;
+    padding: 0.6rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .f-w-3 {
+    display: none;
+  }
+
+  .footer-wrapper {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 2rem;
+    border-top: 1px solid #ccc;
+    margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    grid-gap: 2.5rem;
+  }
+
+  .bottom-left {
+    max-width: 13rem;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .f-w-list {
+    padding-right: 0.8rem;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767.98px) {
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .search-area-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .search-section-header {
+    font-size: 43px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-section-header-sub {
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 60px;
+  }
+
+  .search-dropdown {
+    width: 97%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    line-height: 1;
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    background-color: #fff;
+    font-family: inherit;
+    margin-right: 1px;
+  }
+
+  .search-input {
+    margin-bottom: 0.1rem;
+    padding: 1rem 1rem 1rem 2.4rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    margin-right: 1px;
+    width: 97%;
+  }
+
+  .search-result-btn {
+    margin-left: 0;
+    background-color: #383838;
+    color: #888;
+    padding: 13px;
+    font-size: 20px;
+    width: 97%;
+    text-align: center;
+  }
+
+  .result-container {
+    position: relative;
+    width: 98%;
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    padding: 0;
+    border: none;
+  }
+
+  .result-des-para {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .result-display {
+    border: none;
+  }
+
+  .des-image {
+    width: 18rem;
+    object-fit: cover;
+    height: 14rem;
+  }
+
+  .des-catlog-heading {
+    font-family: "Free Sans Bold", sans-serif;
+    font-size: 1rem;
+  }
+
+  .des-catlog-bottom {
+    display: block;
+  }
+
+  .des-catlog-date {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .search-options {
+    display: none;
+  }
+
+  .des-article-wrap {
+    display: block;
+  }
+
+  .result-page-container {
+    max-width: 18rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+
+  .footer-wrapper {
+    display: block;
+  }
+
+  .main-bottom-wrap {
+    display: block;
+  }
+
+  .f-w-container-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .f-w-list {
+    flex: 1;
+  }
+
+  .bottom-right {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .main-logo {
+    width: 91px;
+    height: 50px;
+    border-radius: 50px;
+  }
+
+  .main-logo-text {
+    font-size: 1.3rem;
+    font-family: "free FreeSansBold";
+  }
+
+  .bottom-left {
+    max-width: 20rem;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .f-w-3 {
+    display: flex;
+    flex-direction: column;
+  }
 }

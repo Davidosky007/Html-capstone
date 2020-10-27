@@ -16,25 +16,7 @@ $light-grey: #f6f6f6;
 $color-white: #fff;
 $font-size-1: 1.5rem;
 
-
-
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  color: $tertiary-color;
-  letter-spacing: 0.2px;
-  font-family: Pragmatica;
-}  
-
-img{
-  object-fit: cover;
-}  
-
-
-
-
+// Fonts Section
 @font-face {
   font-family: "Gotham";
   src: url("../fonts/BOLD/HomepageBaukasten-Bold.otf") format("opentype"), url("../fonts/BOLD/HomepageBaukasten-Bold.ttf") format("truetype");
@@ -65,56 +47,69 @@ img{
   font-weight: 700;
 }
 
-body{
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: $tertiary-color;
+  letter-spacing: 0.2px;
+  font-family: "Pragmatica Medium";
   width: 100%;
   margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
-    color: $secondary-color;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
+img {
+  object-fit: cover;
 }
 
-a:hover{
-      opacity: 0.8;
-      text-decoration: none;
-      color: $color-white;
+a {
+  text-decoration: none;
+  color: $secondary-color;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: $tertiary-color;
 }
 
 // NAVBAR SECTION
-.main-navbar{
+.main-navbar {
   background-color: $tertiary-color;
   padding-left: 40px;
 }
 
-.main-logo{
+.main-logo {
   width: 58px;
   height: 50px;
   border-radius: 50px;
 }
 
-.main-logo-text{
-  font-family: free FreeSansBold;
+.main-logo-text {
+  font-family: "Free Sans Bold";
+  font-size: 1.6rem;
 }
 
-.home-active{
+.home-active {
   color: $primary-color !important;
 }
 
-.post-ad{
-  padding-top: 0px;
+.post-ad {
+  padding-top: 0;
 }
 
-.btn-post{
-  color: $primary-color;
+.btn-post {
+  color: #fff;
+  background-color: #d35266;
 }
 
-.main-info-mail svg{
-font-size: 30px;
-color: $color-white;
+.main-info-mail svg {
+  font-size: 30px;
+  color: $color-white;
 }
 
 .unread-num {
@@ -133,43 +128,42 @@ color: $color-white;
   border-radius: 3px;
 }
 
-.main-nav-info{
+.main-nav-info {
   justify-content: center;
   align-items: center;
   margin-right: 50px;
 }
 
-.name-text{
-  font-family: free FreeSansBold;
+.name-text {
+  font-family: "Free Sans Bold";
   text-decoration: none;
 }
 
-
-.user-img{
+.user-img {
   width: 30px;
   border-radius: 50px;
   object-fit: cover;
 }
 
 // search page section
-.search-section{
-    padding: 6rem 0 4rem 0;
-    background-color: $primary-color;
+.search-section {
+  padding: 6rem 0 4rem 0;
+  background-color: $primary-color;
 }
 
-.search-area{
+.search-area {
   width: 96%;
   margin: 0 auto;
   max-width: 120rem;
 }
 
-.search-area-form{
+.search-area-form {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.search-section-header{
+.search-section-header {
   font-size: 49px;
   font-weight: 700;
   color: $color-white;
@@ -177,7 +171,7 @@ color: $color-white;
   justify-content: center;
 }
 
-.search-section-header-sub{
+.search-section-header-sub {
   font-size: 30px;
   display: flex;
   justify-content: center;
@@ -192,7 +186,7 @@ select {
   line-height: 1;
 }
 
-.search-dropdown{
+.search-dropdown {
   appearance: none;
   border: none;
   outline: none;
@@ -204,11 +198,10 @@ select {
 }
 
 .search-dropdown option {
-  font-family: Gotham Sans;
+  font-family: "Gotham";
 }
 
-
-.search-input{
+.search-input {
   padding: 1rem 1rem 1rem 2.4rem;
   appearance: none;
   border: none;
@@ -217,7 +210,7 @@ select {
   width: 30%;
 }
 
-.search-result-btn{
+.search-result-btn {
   background-color: $tertiary-color;
   color: $secondary-color;
   padding: 13px;
@@ -228,7 +221,7 @@ select {
 }
 
 //HOT AD SECTION
-.hot-ad-main{
+.hot-ad-main {
   width: 97%;
   margin: 0 auto;
   max-width: 120rem;
@@ -241,19 +234,21 @@ select {
   margin: 0 auto;
 }
 
-.hot-ad-heading{
+.hot-ad-heading {
   font-size: 1.5rem;
 }
 
-.ad-img{
+.ad-img {
   width: 74%;
   object-fit: cover;
 }
-.ad-img-1{
+
+.ad-img-1 {
   width: 74%;
   object-fit: cover;
 }
-.ad-img-2{
+
+.ad-img-2 {
   width: 74%;
   object-fit: cover;
 }
@@ -263,22 +258,24 @@ select {
   padding-left: 15px;
   padding-top: 6px;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   right: 140px;
   width: 6rem;
   height: 2rem;
 }
-.img-arrow:hover{
+
+.img-arrow:hover {
   opacity: 0.6;
 }
 
-.img-arrow-links{
+.img-arrow-links {
   color: $primary-color;
   font-size: 1.3rem;
   display: inline-flex;
   justify-content: space-between;
 }
-.ad-second-para{
+
+.ad-second-para {
   font-weight: 600;
 }
 
@@ -286,298 +283,297 @@ select {
   font-weight: 400;
 }
 
-.ad-header{
+.ad-header {
   color: $primary-color;
   font-size: 2rem;
 }
 
-.hot-purchase{
-    max-width: 26rem;
-    background-color: $primary-color;
-    border-radius: 0.2rem;
-    display: flex;
-  }
+.hot-purchase {
+  max-width: 26rem;
+  background-color: $primary-color;
+  border-radius: 0.2rem;
+  display: flex;
+}
 
-  .hot-price{
-        color: $color-white;
-        border-right: 1px solid #777;
-        padding: 0 3.6rem;
-        font-size: 1.5rem;
-        display: flex;
-        align-items: center;
-        height: 2rem;
-  }
+.hot-price {
+  color: $color-white;
+  border-right: 1px solid #777;
+  padding: 0 3.6rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
 
-  .hot-purchase span {
-    font-size: 1rem;
-  }
+.hot-purchase span {
+  font-size: 1rem;
+}
 
-  .hot-purchase-btn{
-    color: $color-white;
-    padding: 0 3.6rem;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    height: 2rem;
-  }
+.hot-purchase-btn {
+  color: $color-white;
+  padding: 0 3.6rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
 
-  .hot-ad-arrow{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    top: 185px;
-  }
-
-  .arrow-links{
-    border: 1px solid #ccc;
-    width: 2.6rem;
-    height: 2.6rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $primary-color;
-  }
-
-  .product-main{
+.hot-ad-arrow {
+  position: absolute;
   width: 100%;
-    background-color: $light-grey;
-  }
+  display: flex;
+  justify-content: space-between;
+  top: 185px;
+}
 
-  .perfume-product-main{
-    padding: 1rem 0 0rem 0;
-    max-width: 76%;
-    margin: 0 auto;
-  }
+.arrow-links {
+  border: 1px solid #ccc;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-color;
+}
 
-  .perfume-product-title{
-    display: flex;
-    margin-bottom: -17px;
-    align-items: center;
-  }
+// Product Section
+.product-main {
+  width: 100%;
+  background-color: $light-grey;
+}
 
-  .perfume-product-para{
-    font-weight: 400;
-    font-size: 1rem;
-    color: rgb(158, 156, 156);
-  }
+.perfume-product-main {
+  padding: 1rem 0 0 0;
+  max-width: 76%;
+  margin: 0 auto;
+}
 
-  .perfume-product-heading{
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
+.perfume-product-title {
+  display: flex;
+  margin-bottom: -17px;
+  align-items: center;
+}
 
-  .perfume-product-heading .iconify{
-    margin-right: 1rem;
-  }
+.perfume-product-para {
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgb(158, 156, 156);
+}
 
-  .carousel-main {
-    padding-top: 6px;
-    max-width: 76%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-    padding-bottom: 2rem;
-  }
+.perfume-product-heading {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 
-  .img-wrap {
-    width: 12.375rem;
-  }
+.perfume-product-heading .iconify {
+  margin-right: 1rem;
+}
 
-.card{
+.carousel-main {
+  padding-top: 6px;
+  max-width: 76%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.img-wrap {
+  width: 12.375rem;
+}
+
+.card {
   width: 15rem;
 }
 
-.card-img-top{
-      flex-shrink: 0;
-      width: 100%;
-      height: 13rem;
-      object-fit: contain;
+.card-img-top {
+  flex-shrink: 0;
+  width: 100%;
+  height: 13rem;
+  object-fit: contain;
 }
-  
-  .add-btn{
-        border: 1px solid #777;
-        width: 2rem;
-        height: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #777;
-        cursor : pointer;
-        z-index: 1;
-        background-color: transparent;
-  }
 
-  .status{
-    color: $primary-color;
-  }
+.add-btn {
+  border: 1px solid #777;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  cursor: pointer;
+  z-index: 1;
+  background-color: transparent;
+}
 
-  .brand{
-    margin-bottom: 1rem;
-  }
+.status {
+  color: $primary-color;
+}
 
-  .product-price{
-    color: $primary-color;
-    font-weight: 700;
-    font-size: 1.3rem;
-  }
+.brand {
+  margin-bottom: 1rem;
+}
 
-  .carousel-controls {
-        position: absolute;
-        top: 1100px;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 0;
-  }
+.product-price {
+  color: $primary-color;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
 
-  .carousel-control-links {
-        height: 100%;
-        width: 2rem;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
-        box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
-  }
+.carousel-controls {
+  position: absolute;
+  top: 1100px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 0;
+}
 
-  .carousel-control-links-1{
-    height: 100%;
-    width: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
-    box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
-  }
+.carousel-control-links {
+  height: 100%;
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
+  box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
+}
 
-  .carousel-controls .iconify{
-    font-size: 1.6rem;
-  }
+.carousel-control-links-1 {
+  height: 100%;
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
+  box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
+}
 
-  // FOOTER SECTION
-  .footer-wrapper {
-    width: 100%;
-    background-color: #fff;
-    padding-top: 2rem;
-    border-top: 1px solid #ccc;
-    margin-bottom: 2.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    display: grid;
-    grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
-    grid-gap: 2.5rem;
-  }
+.carousel-controls .iconify {
+  font-size: 1.6rem;
+}
 
-  .footer-wrapper-main hr {
-    color: $primary-color;
-  }
+// FOOTER SECTION
+.footer-wrapper {
+  width: 100%;
+  background-color: #fff;
+  padding-top: 2rem;
+  border-top: 1px solid #ccc;
+  margin-bottom: 2.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr;
+  grid-gap: 2.5rem;
+}
 
-  .f-w-container-list {
-    display: flex;
-    justify-content: space-between;
-    line-height: 2rem;
-  }
+.footer-wrapper-main hr {
+  color: $primary-color;
+}
 
-  .f-w-list {
-    font-size: 1rem;
-  }
+.f-w-container-list {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2rem;
+}
 
-  .f-w-4 {
-    padding-top: 2rem;
-  }
+.f-w-list {
+  font-size: 1rem;
+}
 
-  .f-w-country {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1rem;
-  }
+.f-w-4 {
+  padding-top: 2rem;
+}
 
-  .country-d-d {
-    appearance: none;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    font-size: 0.8rem;
-  }
+.f-w-country {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
 
-  .f-w-2-header {
-    padding-right: 0.8rem;
-    font-size: 1rem;
-  }
+.country-d-d {
+  appearance: none;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.8rem;
+}
 
-  .f-w-option {
-    font-size: 0.8rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.f-w-2-header {
+  padding-right: 0.8rem;
+  font-size: 1rem;
+}
 
-  .bottom-main-footer {
-    border-top: 1px solid #ccc;
-  }
+.f-w-option {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .main-bottom-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.bottom-main-footer {
+  border-top: 1px solid #ccc;
+}
 
-  .bottom-right {
-    font-size: 0.8rem;
-    padding: 1rem;
-  }
+.main-bottom-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .bottom-left {
-    max-width: 16rem;
-    width: 100%;
-    padding: 1rem 0;
-  }
+.bottom-right {
+  font-size: 0.8rem;
+  padding: 1rem;
+}
 
-  .f-text {
-    font-size: 1rem;
-    line-height: 1.3rem;
-  }
+.bottom-left {
+  max-width: 16rem;
+  width: 100%;
+  padding: 1rem 0;
+}
 
-  .social-list {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
+.f-text {
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
 
-  .social-items {
-    font-size: 1.5rem;
-    color: $secondary-color;
-  }
+.social-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
+.social-items {
+  font-size: 1.5rem;
+  color: $secondary-color;
+}
 
+.social-items:hover {
+  color: $primary-color;
+}
 
-  // MEDIA QUERIES
+// MEDIA QUERIES
 
-  // Extra small devices (portrait phones, less than 576px)
-  @media (max-width: 575.98px) {
-  }
-
-
-  // Medium devices (tablets, less than 992px)
-  @media (max-width: 991.98px) {
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
   .f-w-3 {
     display: none;
   }
+
   .footer-wrapper {
     width: 100%;
     background-color: $color-white;
@@ -595,223 +591,261 @@ select {
     max-width: 13rem;
     width: 100%;
     padding: 1rem 0;
-    }
-
-    .card {
-      width: 10rem;
-    }
-    .carousel-main {
-      padding-top: 6px;
-      max-width: 90%;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-evenly;
-      position: relative;
-      padding-bottom: 2rem;
-    }
-
-    .hot-purchase-btn {
-      color: $color-white;
-      padding: 0 2rem;
-      font-size: 1rem;
-      display: flex;
-      align-items: center;
-    }
-
-    .hot-price{
-      color: $color-white;
-      padding: 0 2rem;
-      font-size: 1rem;
-      display: flex;
-      align-items: center;
-    }
-
-    .hot-purchase {
-      max-width: 26rem;
-      background-color: #d35266;
-      border-radius: 0.2rem;
-      display: flex;
-      padding: 0.5rem;
-    }
-
-    .f-w-list {
-          padding-right: 0.8rem;
-            font-size: 1rem;
-    }
-     .f-text {
-       font-size: 1rem;
-       line-height: 1.3rem;
-     }
-
   }
 
-  // Large devices (desktops, less than 1200px)
-  @media (max-width: 1199.98px) {
- 
+  .card {
+    width: 10rem;
   }
 
-  // Small devices (landscape phones, less than 768px)
-  @media (max-width: 767.98px) {
-    .search-area-form {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-    }
-
-    .search-input {
-      padding: 1rem 1rem 1rem 2.4rem;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      border: none;
-      outline: none;
-      margin-right: 1px;
-      width: 89%;
-      margin-bottom: 0.1rem;
-    }
-
-    .search-dropdown {
-      margin-bottom: 0.1rem;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      border: none;
-      outline: none;
-      line-height: 1;
-      font-size: 1.5rem;
-      background-color: $color-white;
-      font-family: inherit;
-      margin-right: 1px;
-      width: 17rem;
-    }
-
-    .search-dropdown option {
-      font-size: 0.6rem;
-    }
-
-    .search-result-btn {
-      background-color: #383838;
-      color: #888;
-      padding: 13px;
-      font-size: 20px;
-      width: 17rem;
-      margin-left: 0rem;
-      text-align: center;
-    }
-
-    .search-section-header-sub {
-      font-size: 25px;
-      display: flex;
-      justify-content: center;
-      color: $color-white;
-      margin-bottom: 60px;
-    }
-
-    .hot-ad-heading {
-      font-size: 1.5rem;
-      text-align: center;
-    }
-
-    .footer-wrapper {
-      display: block;
-    }
-    
-    .hot-ad-wrapper {
-      display: block;
-    }
-
-    .ad-img {
-      width: 230px;
-      object-fit: cover;
-    }
-
-    .ad-img-1{
-     width: 230px;
-     object-fit: cover;
-    }
-    .ad-img-2{
-     width: 230px;
-     object-fit: cover;
-    }
-    
-
-    .hot-ad-info {
-      display: block;
-    }
-
-    .ad-header {
-      color: #d35266;
-      font-size: 1.2rem;
-      display: block;
-    }
-
-    .ad-para-1{
-     font-size: 0.8rem;
-    }
-
-    .hot-purchase {
-      max-width: 20rem;
-      background-color: #d35266;
-      border-radius: 0.2rem;
-      display: flex;
-      padding: 0.5rem;
-    }
-
-     .hot-purchase-btn {
-      color: $color-white;
-      padding: 0px;
-       font-size: 1.5rem;
-       display: flex;
-       align-items: center;
-     }
-
-     .perfume-product-heading {
-       display: flex;
-       align-items: center;
-       font-size: 1.3rem;
-       margin-bottom: 1rem;
-     }
-
-     .carousel-controls .iconify {
-      display: none;
-     }
-
-     .perfume-product-title {
-       display: flex;
-       flex-direction: column;
-       margin-bottom: -17px;
-       align-items: center;
-     }
-
-     .perfume-product-para {
-       font-weight: 300;
-       font-size: 0.7rem;
-       color: #9e9c9c;
-     }
-
-     .carousel-main {
-       padding-top: 6px;
-       max-width: 90%;
-       margin: 0 auto;
-       display: block;
-       justify-content: space-evenly;
-       position: relative;
-       padding-bottom: 2rem;
-     }
-
-     .card {
-       width: 18rem;
-       margin-bottom: 1.5rem;
-     }
-     .arrow-links {
-       border: 1px solid #ccc;
-       width: 1.6rem;
-       height: 1.6rem;
-       border-radius: 50%;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       color: #d35266;
-     }
+  .carousel-main {
+    padding-top: 6px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    padding-bottom: 2rem;
   }
+
+  .hot-purchase-btn {
+    color: $color-white;
+    padding: 0 2rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .hot-price {
+    color: $color-white;
+    padding: 0 2rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .hot-purchase {
+    max-width: 26rem;
+    background-color: #d35266;
+    border-radius: 0.2rem;
+    display: flex;
+    padding: 0.5rem;
+  }
+
+  .f-w-list {
+    padding-right: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .f-text {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .search-area-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .search-input {
+    padding: 1rem 1rem 1rem 2.4rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    margin-right: 1px;
+    width: 89%;
+    margin-bottom: 0.1rem;
+  }
+
+  .search-dropdown {
+    margin-bottom: 0.1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    line-height: 1;
+    font-size: 1.5rem;
+    background-color: $color-white;
+    font-family: inherit;
+    margin-right: 1px;
+    width: 17rem;
+  }
+
+  .search-dropdown option {
+    font-size: 0.6rem;
+  }
+
+  .search-result-btn {
+    background-color: #383838;
+    color: #888;
+    padding: 13px;
+    font-size: 20px;
+    width: 17rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .search-section-header-sub {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: $color-white;
+    margin-bottom: 60px;
+  }
+
+  .hot-ad-heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-wrapper {
+    display: block;
+  }
+
+  .main-logo {
+    width: 91px;
+    height: 50px;
+    border-radius: 50px;
+  }
+
+  .main-logo-text {
+    font-size: 1.3rem;
+    font-family: "Free Sans Bold";
+  }
+
+  .hot-ad-wrapper {
+    display: block;
+  }
+
+  .ad-img {
+    width: 230px;
+    object-fit: cover;
+  }
+
+  .ad-img-1 {
+    width: 230px;
+    object-fit: cover;
+  }
+
+  .ad-img-2 {
+    width: 230px;
+    object-fit: cover;
+  }
+
+  .hot-ad-info {
+    display: block;
+  }
+
+  .ad-header {
+    color: #d35266;
+    font-size: 1.2rem;
+    display: block;
+  }
+
+  .ad-para-1 {
+    font-size: 0.8rem;
+  }
+
+  .hot-purchase {
+    max-width: 20rem;
+    background-color: #d35266;
+    border-radius: 0.2rem;
+    display: flex;
+    padding: 0.5rem;
+  }
+
+  .hot-purchase-btn {
+    color: $color-white;
+    padding: 0;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .f-w-container-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .perfume-product-heading {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .carousel-controls .iconify {
+    display: none;
+  }
+
+  .perfume-product-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -17px;
+    align-items: center;
+  }
+
+  .perfume-product-para {
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: #9e9c9c;
+  }
+
+  .carousel-main {
+    padding-top: 6px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+    justify-content: space-evenly;
+    position: relative;
+    padding-bottom: 2rem;
+  }
+
+  .card {
+    width: 18rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .arrow-links {
+    border: 1px solid #ccc;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d35266;
+  }
+
+  .f-w-list {
+    flex: 1;
+  }
+
+  .main-bottom-wrap {
+    display: block;
+  }
+
+  .bottom-right {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .bottom-left {
+    max-width: 20rem;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .f-w-3 {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -7,20 +7,6 @@
   list-style: none;
 }
 
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-  color: #383838;
-  letter-spacing: 0.2px;
-  font-family: Pragmatica;
-}
-
-img {
-  object-fit: cover;
-}
-
 @font-face {
   font-family: "Gotham";
   src: url("../fonts/BOLD/HomepageBaukasten-Bold.otf") format("opentype"), url("../fonts/BOLD/HomepageBaukasten-Bold.ttf") format("truetype");
@@ -47,8 +33,19 @@ img {
   font-weight: 700;
 }
 body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: #383838;
+  letter-spacing: 0.2px;
+  font-family: "Pragmatica Medium";
   width: 100%;
   margin: 0 auto;
+}
+
+img {
+  object-fit: cover;
 }
 
 a {
@@ -60,7 +57,7 @@ a {
 a:hover {
   opacity: 0.8;
   text-decoration: none;
-  color: #fff;
+  color: #383838;
 }
 
 .main-navbar {
@@ -75,7 +72,8 @@ a:hover {
 }
 
 .main-logo-text {
-  font-family: free FreeSansBold;
+  font-family: "Free Sans Bold";
+  font-size: 1.6rem;
 }
 
 .home-active {
@@ -83,11 +81,12 @@ a:hover {
 }
 
 .post-ad {
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .btn-post {
-  color: #d35266;
+  color: #fff;
+  background-color: #d35266;
 }
 
 .main-info-mail svg {
@@ -118,7 +117,7 @@ a:hover {
 }
 
 .name-text {
-  font-family: free FreeSansBold;
+  font-family: "Free Sans Bold";
   text-decoration: none;
 }
 
@@ -182,7 +181,7 @@ select {
 }
 
 .search-dropdown option {
-  font-family: Gotham Sans;
+  font-family: "Gotham";
 }
 
 .search-input {
@@ -243,7 +242,7 @@ select {
   padding-left: 15px;
   padding-top: 6px;
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   right: 140px;
   width: 6rem;
   height: 2rem;
@@ -328,7 +327,7 @@ select {
 }
 
 .perfume-product-main {
-  padding: 1rem 0 0rem 0;
+  padding: 1rem 0 0 0;
   max-width: 76%;
   margin: 0 auto;
 }
@@ -537,6 +536,10 @@ select {
   color: #888;
 }
 
+.social-items:hover {
+  color: #d35266;
+}
+
 @media (max-width: 991.98px) {
   .f-w-3 {
     display: none;
@@ -654,7 +657,7 @@ select {
     padding: 13px;
     font-size: 20px;
     width: 17rem;
-    margin-left: 0rem;
+    margin-left: 0;
     text-align: center;
   }
 
@@ -673,6 +676,17 @@ select {
 
   .footer-wrapper {
     display: block;
+  }
+
+  .main-logo {
+    width: 91px;
+    height: 50px;
+    border-radius: 50px;
+  }
+
+  .main-logo-text {
+    font-size: 1.3rem;
+    font-family: "Free Sans Bold";
   }
 
   .hot-ad-wrapper {
@@ -718,9 +732,15 @@ select {
 
   .hot-purchase-btn {
     color: #fff;
-    padding: 0px;
+    padding: 0;
     font-size: 1.5rem;
     display: flex;
+    align-items: center;
+  }
+
+  .f-w-container-list {
+    display: flex;
+    justify-content: center;
     align-items: center;
   }
 
@@ -772,5 +792,29 @@ select {
     justify-content: center;
     align-items: center;
     color: #d35266;
+  }
+
+  .f-w-list {
+    flex: 1;
+  }
+
+  .main-bottom-wrap {
+    display: block;
+  }
+
+  .bottom-right {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .bottom-left {
+    max-width: 20rem;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .f-w-3 {
+    display: flex;
+    flex-direction: column;
   }
 }

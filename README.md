@@ -4,7 +4,7 @@
 # Online Beauty Shop
 > This project is the capstone of Microverse HTML/CSS curriculum module.
 
-![screenshot]()
+![screenshot](./assets/images/project-shot1.jpg)
 
 This project is the final in the Microverse HTML & CSS module - CAPSTONE. It's a real-world-like project, built with business specifications. The project for the HTML & CSS Capstone Project is based on an online shop for electronics. The given design of the website should be followed, but the content is personalized. 
 - Project build for 3 screen sizes, small up to 576px wide, tablet size up to 768px and bigger screen sizes more than 768px.
@@ -66,7 +66,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]().
+Feel free to check the [issues page](https://github.com/Davidosky007/Html-capstone/issues).
 
 ## Show your support
 
@@ -76,6 +76,8 @@ Give a ⭐️ if you like this project!
 
 
 - Thanks to Bootstrap
+- Thanks to rawpixel for produts images
+- Thanks to Nordstorm for Products Images [Nordstorm.com](https://www.nordstrom.com/)
 - Thanks to stand-up team for raising issues and giving constructive critics out
 - Thanks to Mohammed Awad [Mohammed Awad](https://www.behance.net/M_Awad) 
 - [Design page Link](https://www.behance.net/gallery/24796463/ZATTIX)
