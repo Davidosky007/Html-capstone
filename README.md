@@ -4,7 +4,7 @@
 # Online Beauty Shop
 > This project is the capstone of Microverse HTML/CSS curriculum module.
 
-![screenshot](/Assets/images/project-shot1.png)
+![screenshot](/Assets/images/project-shoot1.png)
 
 This project is the final in the Microverse HTML & CSS module - CAPSTONE. It's a real-world-like project, built with business specifications. The project for the HTML & CSS Capstone Project is based on an online shop for electronics. The given design of the website should be followed, but the content is personalized. 
 - Project build for 3 screen sizes, small up to 576px wide, tablet size up to 768px and bigger screen sizes more than 768px.
