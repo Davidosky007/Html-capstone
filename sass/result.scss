@@ -18,34 +18,36 @@ $color-white: #fff;
 $color-ex-light-grey: #ccc;
 $font-size-1: 1.5rem;
 
-// Font Section
+// Fonts Section
 @font-face {
   font-family: "Gotham";
-  src: url("../fonts/BOLD/HomepageBaukasten-Bold.otf") format("opentype"), url("../fonts/BOLD/HomepageBaukasten-Bold.ttf") format("truetype");
+  src:
+    url("../Fonts/Gotham-Font/Gotham-Font/Gotham-Bold.otf") format("opentype"),
+    url("../Fonts/Gotham-Font/Gotham-Font/GothamBold.ttf") format("truetype");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url("../fonts/Gotham-Rounded-Light.otf") format("opentype");
+  src: url("../Fonts/Gotham_Rounded_Light/Gotham_Rounded_Light/Gotham-Rounded-Light.otf") format("opentype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Nimbus Sans Light";
-  src: url("../fonts/Nimbus-Sans-D-OT-Light_32752.ttf") format("truetype");
+  src: url("../Fonts/Nimbus-Sans-D-OT-Light_32752.ttf") format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Pragmatica Medium";
-  src: url("../fonts/PragmaticaMedium.otf") format("opentype");
+  src: url("../Fonts/PragmaticaMedium.otf") format("opentype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Free Sans Bold";
-  src: url("../fonts/FreeSans.otf") format("opentype"), url("../../fonts/Free-Sans/FreeSansBold.ttf") format("truetype");
+  src: url("../Fonts/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf") format("truetype");
   font-weight: 700;
 }
 
@@ -56,7 +58,9 @@ body {
   line-height: 1.5;
   color: $tertiary-color;
   letter-spacing: 0.2px;
-  font-family: "Pragmatica Medium";
+  font-family:
+    "Nimbus Sans Light",
+    sans-serif;
   width: 100%;
   margin: 0 auto;
 }
@@ -92,7 +96,9 @@ a:hover {
 }
 
 .main-logo-text {
-  font-family: "Free Sans Bold";
+  font-family:
+    "Gotham",
+    sans-serif;
   font-size: 1.6rem;
 }
 
@@ -137,7 +143,9 @@ a:hover {
 }
 
 .name-text {
-  font-family: "Free Sans Bold";
+  font-family:
+    "Free Sans Bold",
+    sans-serif;
   text-decoration: none;
 }
 
@@ -182,7 +190,7 @@ a:hover {
 }
 
 select {
-  background: $color-white url(https://api.iconify.design/ant-design:caret-down-filled.svg) no-repeat;
+  background: $color-white url("https://api.iconify.design/ant-design:caret-down-filled.svg") no-repeat;
   background-position: 0.5rem center;
   padding: 1rem 1rem 1rem 2.4rem;
   line-height: 1;
@@ -200,7 +208,9 @@ select {
 }
 
 .search-dropdown option {
-  font-family: "Gotham";
+  font-family:
+    "Gotham",
+    sans-serif;
 }
 
 .search-input {
@@ -263,9 +273,9 @@ main {
 
 .des-catlog-heading {
   font-family:
-    "Free Sans Bold",
+    "Gotham",
     sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .des-catlog-status {
@@ -279,7 +289,7 @@ main {
 
 .des-catlog-brand span {
   font-family:
-    "Free Sans Bold",
+    "Nimbus Sans Light",
     sans-serif;
 }
 
@@ -422,9 +432,14 @@ main {
 }
 
 .f-w-country {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
+}
+
+.lang {
+  margin-left: -0.75em;
 }
 
 .country-d-d {
@@ -512,7 +527,7 @@ main {
   }
 
   .des-catlog-heading {
-    font-family: "Free Sans Bold", sans-serif;
+    font-family: "Gotham", sans-serif;
     font-size: 1rem;
   }
 
@@ -607,18 +622,18 @@ main {
   }
 
   .search-dropdown {
-    width: 97%;
+    margin-bottom: 0.1rem;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     border: none;
     outline: none;
     line-height: 1;
-    font-size: 1rem;
-    margin-bottom: 0.1rem;
-    background-color: $color-white;
+    font-size: 1.5rem;
+    background-color: #fff;
     font-family: inherit;
     margin-right: 1px;
+    width: 89%;
   }
 
   .search-input {
@@ -630,7 +645,7 @@ main {
     border: none;
     outline: none;
     margin-right: 1px;
-    width: 97%;
+    width: 89%;
   }
 
   .search-result-btn {
@@ -639,7 +654,7 @@ main {
     color: $secondary-color;
     padding: 13px;
     font-size: 20px;
-    width: 97%;
+    width: 89%;
     text-align: center;
   }
 
@@ -669,7 +684,7 @@ main {
   }
 
   .des-catlog-heading {
-    font-family: "Free Sans Bold", sans-serif;
+    font-family: "Gotham", sans-serif;
     font-size: 1rem;
   }
 
@@ -729,7 +744,9 @@ main {
 
   .main-logo-text {
     font-size: 1.3rem;
-    font-family: "free FreeSansBold";
+    font-family:
+      "free FreeSansBold",
+      sans-serif;
   }
 
   .bottom-left {

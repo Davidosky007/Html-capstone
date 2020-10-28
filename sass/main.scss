@@ -19,31 +19,33 @@ $font-size-1: 1.5rem;
 // Fonts Section
 @font-face {
   font-family: "Gotham";
-  src: url("../fonts/BOLD/HomepageBaukasten-Bold.otf") format("opentype"), url("../fonts/BOLD/HomepageBaukasten-Bold.ttf") format("truetype");
-  font-weight: 700;
+  src:
+    url("../Fonts/Gotham-Font/Gotham-Font/Gotham-Bold.otf") format("opentype"),
+    url("../Fonts/Gotham-Font/Gotham-Font/GothamBold.ttf") format("truetype");
+  font-weight: 600;
 }
 
 @font-face {
   font-family: "Gotham Rounded";
-  src: url("../fonts/Gotham-Rounded-Light.otf") format("opentype");
+  src: url("../Fonts/Gotham_Rounded_Light/Gotham_Rounded_Light/Gotham-Rounded-Light.otf") format("opentype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Nimbus Sans Light";
-  src: url("../fonts/Nimbus-Sans-D-OT-Light_32752.ttf") format("truetype");
+  src: url("../Fonts/Nimbus-Sans-D-OT-Light_32752.ttf") format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Pragmatica Medium";
-  src: url("../fonts/PragmaticaMedium.otf") format("opentype");
+  src: url("../Fonts/PragmaticaMedium.otf") format("opentype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Free Sans Bold";
-  src: url("../fonts/FreeSans.otf") format("opentype"), url("../../fonts/Free-Sans/FreeSansBold.ttf") format("truetype");
+  src: url("../Fonts/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf") format("truetype");
   font-weight: 700;
 }
 
@@ -54,7 +56,9 @@ body {
   line-height: 1.5;
   color: $tertiary-color;
   letter-spacing: 0.2px;
-  font-family: "Pragmatica Medium";
+  font-family:
+    "Nimbus Sans Light",
+    sans-serif;
   width: 100%;
   margin: 0 auto;
 }
@@ -90,7 +94,9 @@ a:hover {
 }
 
 .main-logo-text {
-  font-family: "Free Sans Bold";
+  font-family:
+    "Free Sans Bold",
+    sans-serif;
   font-size: 1.6rem;
 }
 
@@ -123,9 +129,9 @@ a:hover {
   width: 12px;
   font-weight: 800;
   height: 14px;
-  display: flex;
   align-items: center;
   border-radius: 3px;
+  display: flex;
 }
 
 .main-nav-info {
@@ -135,7 +141,9 @@ a:hover {
 }
 
 .name-text {
-  font-family: "Free Sans Bold";
+  font-family:
+    "Free Sans Bold",
+    sans-serif;
   text-decoration: none;
 }
 
@@ -180,7 +188,7 @@ a:hover {
 }
 
 select {
-  background: $color-white url(https://api.iconify.design/ant-design:caret-down-filled.svg) no-repeat;
+  background: $color-white url("https://api.iconify.design/ant-design:caret-down-filled.svg") no-repeat;
   background-position: 0.5rem center;
   padding: 1rem 1rem 1rem 2.4rem;
   line-height: 1;
@@ -198,7 +206,9 @@ select {
 }
 
 .search-dropdown option {
-  font-family: "Gotham";
+  font-family:
+    "Gotham",
+    sans-serif;
 }
 
 .search-input {
@@ -500,6 +510,7 @@ select {
 }
 
 .f-w-country {
+  align-items: center;
   display: flex;
   justify-content: space-between;
   margin-top: 1rem;
@@ -516,6 +527,10 @@ select {
 .f-w-2-header {
   padding-right: 0.8rem;
   font-size: 1rem;
+}
+
+.lang {
+  margin-left: -0.75em;
 }
 
 .f-w-option {
@@ -672,10 +687,10 @@ select {
     outline: none;
     line-height: 1;
     font-size: 1.5rem;
-    background-color: $color-white;
+    background-color: #fff;
     font-family: inherit;
     margin-right: 1px;
-    width: 17rem;
+    width: 89%;
   }
 
   .search-dropdown option {
@@ -716,12 +731,15 @@ select {
   }
 
   .main-logo-text {
-    font-size: 1.3rem;
-    font-family: "Free Sans Bold";
+    font-family:
+      "Gotham",
+      sans-serif;
+    font-size: 1.5rem;
   }
 
   .hot-ad-wrapper {
-    display: block;
+    display: grid;
+    margin: 0 auto;
   }
 
   .ad-img {
@@ -803,7 +821,7 @@ select {
     padding-top: 6px;
     max-width: 90%;
     margin: 0 auto;
-    display: block;
+    display: grid;
     justify-content: space-evenly;
     position: relative;
     padding-bottom: 2rem;
