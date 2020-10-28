@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./Assets/images/logo5.jpg" type="image/x-icon">
+  <title>Andre Beauty Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <!-- NAVBAR SECTION -->
+  <nav class="navbar navbar-expand-lg navbar-light main-navbar">
+    <a class="navbar-brand main-logo-text text-white">
+      <img src="./Assets/images/logo5.jpg" alt="andrez" class="main-logo pr-1">
+      Andrez </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav active-home d-flex justify-content-between align-center">
+        <a class="nav-link active home-active pl-3" href="#">
+          <span class="iconify" data-icon="fa-solid:home" data-inline="false"></span>
+          HOME <span class="sr-only"></span></a>
+        <a class="nav-link text-white pl-3" href="#">
+          <span class="iconify" data-icon="gg:menu-grid-r" data-inline="false"></span>
+          COLLECTIONS</a>
+        <a class="nav-link text-white pl-3" href="#">
+          <span class="iconify" data-icon="bx:bx-cart-alt" data-inline="false"></span>
+          CART</a>
+        <span class="nav-link disabled post-ad pl-3" tabindex="-1" aria-disabled="true">
+          <button type="button" class="btn btn-post">POST AN AD</button>
+        </span>
+      </div>
+    </div>
+
+    <div class="main-nav-info d-sm-none d-lg-flex justify-content-end position-relative d-none">
+      <div class="main-info-mail pr-3">
+        <a href="#">
+          <span class="iconify" data-icon="ic:outline-mark-email-unread" data-inline="false"></span>
+          <span class="unread-num">2</span>
+        </a>
+      </div>
+      <div class="main-info-name">
+        <a href="#" class="name-text text-white pr-3">Christian Gale</a>
+      </div>
+      <div class="main-info-image">
+        <img src="./Assets/images/andrew-c-mccarthy.png" class=" user-img" alt="andrew">
+      </div>
+    </div>
+  </nav>
+
+  <!-- SEARCH AREA SECTION -->
+  <main class="main-container">
+    <div class="search-section ">
+      <div class="search-area">
+        <h1 class="search-section-header">Andrez</h1>
+        <h5 class="search-section-header-sub">Your One Stop Beauty Shop</h5>
+        <form action="#" class="search-area-form">
+          <select name="Cartegories" class="search-dropdown">
+            <option value="Skin Care"> Skin Care</option>
+            <option value="Make Up"> Make Up</option>
+            <option value="Hair">Hair</option>
+            <option value="Brands"> Brands</option>
+          </select>
+          <input type="text" placeholder="Search here" class="search-input">
+          <input type="text" placeholder="Search here" class="search-input">
+          <a href="result.html" class="search-result-btn"> Search</a>
+        </form>
+      </div>
+    </div>
+
+    <!-- HOT ADS SECTION -->
+    <section class="hot-ad-main">
+      <!-- SLIDER SECTION -->
+
+      <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="100">
+            <div class="hot-ad-container">
+              <h3 class="hot-ad-heading">HOT ADS</h3>
+              <div class="hot-ad-wrapper row">
+                <figure class="hot-ad-img position-relative col-12 col-sm-6">
+                  <img src="./Assets/images/beauty-4993469_1920.jpg" alt="beauty" class="ad-img">
+                  <div class="img-arrow d-none">
+                    <a href="#" class="img-arrow-links mr-3"><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                        data-inline="false"></span></a>
+                    <a href="#" class="img-arrow-links "><span class="iconify" data-icon="dashicons:arrow-right-alt2"
+                        data-inline="false"></span></a>
+                  </div>
+                </figure>
+                <div class="hot-ad-info col-12 col-sm-6">
+                  <h4 class="ad-header">Andre Premium Make Up sets</h4>
+                  <p class="ad-para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus quibusdam
+                    odio. Perspiciatis inventore recusandae pariatur corrupti rem. Quase laboriosam?</p>
+                  <div class="ad-second-para">
+                    <p class="ad-para-1">
+                      By:
+                      <span>Andre Smith </span>
+                    </p>
+                    <p class="ad-para-1">
+                      Brand:
+                      <span>African Pride</span>
+                    </p>
+
+                  </div>
+
+                  <div class="hot-purchase">
+                    <span class="hot-price">$80</span>
+                    <a href="#" class="hot-purchase-btn"><span class="iconify" data-icon="bx:bx-cart-alt"
+                        data-inline="false"></span>
+                      <span>Add To Cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="carousel-item" data-interval="200">
+            <div class="hot-ad-container">
+              <h3 class="hot-ad-heading">HOT ADS</h3>
+              <div class="hot-ad-wrapper row">
+                <figure class="hot-ad-img position-relative col-12 col-sm-6">
+                  <img src="./Assets/images/hair-care-4541744_1920.jpg" alt="hair-care" class="ad-img-1">
+                  <div class="img-arrow d-none">
+                    <a href="#" class="img-arrow-links mr-3"><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                        data-inline="false"></span></a>
+                    <a href="#" class="img-arrow-links "><span class="iconify" data-icon="dashicons:arrow-right-alt2"
+                        data-inline="false"></span></a>
+                  </div>
+                </figure>
+                <div class="hot-ad-info col-12 col-sm-6">
+                  <h4 class="ad-header">Andre Premium Make Up sets</h4>
+                  <p class="ad-para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus quibusdam
+                    odio. Perspiciatis inventore recusandae pariatur corrupti rem. Quase laboriosam?</p>
+                  <div class="ad-second-para">
+                    <p class="ad-para-1">
+                      By:
+                      <span>Andre Smith </span>
+                    </p>
+                    <p class="ad-para-1">
+                      Brand:
+                      <span>African Pride</span>
+                    </p>
+
+                  </div>
+
+                  <div class="hot-purchase">
+                    <span class="hot-price">$80</span>
+                    <a href="#" class="hot-purchase-btn"><span class="iconify" data-icon="bx:bx-cart-alt"
+                        data-inline="false"></span>
+                      <span>Add To Cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="hot-ad-container">
+              <h3 class="hot-ad-heading">HOT ADS</h3>
+              <div class="hot-ad-wrapper row">
+                <figure class="hot-ad-img position-relative col-12 col-sm-6">
+                  <img src="./Assets/images/beauty-4993469_1920.jpg" alt="beauty01" class="ad-img-2">
+                  <div class="img-arrow d-none">
+                    <a href="#" class="img-arrow-links mr-3"><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+                        data-inline="false"></span></a>
+                    <a href="#" class="img-arrow-links "><span class="iconify" data-icon="dashicons:arrow-right-alt2"
+                        data-inline="false"></span></a>
+                  </div>
+                </figure>
+                <div class="hot-ad-info col-12 col-sm-6">
+                  <h4 class="ad-header">Andre Premium Make Up sets</h4>
+                  <p class="ad-para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam doloribus quibusdam
+                    odio. Perspiciatis inventore recusandae pariatur corrupti rem. Quase laboriosam?</p>
+                  <div class="ad-second-para">
+                    <p class="ad-para-1">
+                      By:
+                      <span>Andre Smith </span>
+                    </p>
+                    <p class="ad-para-1">
+                      Brand:
+                      <span>African Pride</span>
+                    </p>
+
+                  </div>
+
+                  <div class="hot-purchase">
+                    <span class="hot-price">$80</span>
+                    <a href="#" class="hot-purchase-btn"><span class="iconify" data-icon="bx:bx-cart-alt"
+                        data-inline="false"></span>
+                      <span>Add To Cart</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+      <div class="hot-ad-arrow">
+        <a href="#" class="arrow-links"><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+            data-inline="false"></span></a>
+        <a href="#" class="arrow-links"><span class="iconify" data-icon="dashicons:arrow-right-alt2"
+            data-inline="false"></span></a>
+      </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="product-main">
+      <!-- Perfumes Section -->
+      <div class="perfume-product-main">
+        <div class="perfume-product-title">
+          <h3 class="perfume-product-heading mr-3 text-dark">
+            <span class="iconify" data-icon="whh:perfume" data-inline="false"></span>
+            Fragrance
+          </h3>
+          <p class="perfume-product-para">( Lorem ipsum dolor sit aes, officia eius aspernatur quia excepturi officiis
+            itaque! )</p>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Carousel Section -->
+      <div class="carousel-main">
+        <div class="card">
+          <img src="./Assets/images/pef-11.jpg" class="card-img-top" alt="pefumes">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="#" class="carousel-link">COCO MADEMOISELLE</a>
+            </h5>
+            <div class="status">NEW</div>
+            <div class="brand">CHANNEL</div>
+            <div class="caruosel-bottom position-relative d-flex justify-content-between">
+              <div class="add-btn"><span class="iconify" data-icon="codicon:add" data-inline="false"></span></div>
+              <div class="product-price">$89</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Assets/images/pef-11.jpg" class="card-img-top" alt="pefumes01">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="#" class="carousel-link">JOE MALONE LONDON</a>
+            </h5>
+            <div class="status">NEW</div>
+            <div class="brand">JOE MALONE</div>
+            <div class="caruosel-bottom position-relative d-flex justify-content-between">
+              <div class="add-btn"><span class="iconify" data-icon="codicon:add" data-inline="false"></span></div>
+              <div class="product-price">$72</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Assets/images/pef-3.jpg" class="card-img-top" alt="pefumes02">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="#" class="carousel-link">COCO MADEMOISELLE</a>
+            </h5>
+            <div class="status">NEW</div>
+            <div class="brand">NEXT</div>
+            <div class="caruosel-bottom position-relative d-flex justify-content-between">
+              <div class="add-btn"><span class="iconify" data-icon="codicon:add" data-inline="false"></span></div>
+              <div class="product-price">$189</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Assets/images/pef-4.jpg" class="card-img-top" alt="pefumes03">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="#" class="carousel-link">COCO MADEMOISELLE</a>
+            </h5>
+            <div class="status">NEW</div>
+            <div class="brand">CHANNEL</div>
+            <div class="caruosel-bottom position-relative d-flex justify-content-between">
+              <div class="add-btn"><span class="iconify" data-icon="codicon:add" data-inline="false"></span></div>
+              <div class="product-price">$89</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <a href="#" class="carousel-control-links"><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+            data-inline="false"></span></a>
+        <a href="#" class="carousel-control-links-1"><span class="iconify" data-icon="dashicons:arrow-right-alt2"
+            data-inline="false"></span>
+          </a>
+      </div>
+  </section>
+
+    <!-- MAKE UP SECTION -->
+    <section class="product-main">
+
+      <div class="perfume-product-main">
+        <div class="perfume-product-title">
+          <h3 class="perfume-product-heading mr-3 text-dark">
+            <span class="iconify" data-icon="whh:perfume" data-inline="false"></span>
+            Make Up
+          </h3>
+          <p class="perfume-product-para">( Lorem ipsum dolor sit aes, officia eius aspernatur quia excepturi officiis
+            itaque! )</p>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Carousel Section -->
+      <div class="carousel-main">
+        <div class="card">
+          <img src="./Assets/images/makeup3.jpg" class="card-img-top" alt="make-up">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="#" class="carousel-link">COCO MADEMOISELLE</a>
+            </h5>
+            <div class="status">NEW</div>
+            <div class="brand">CHANNEL</div>
+            <div class="caruosel-bottom position-relative d-flex justify-content-between">
+              <div class="add-btn"><span class="iconify" data-icon="codicon:add" data-inline="false"></span></div>
+              <div class="product-price">$89</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Assets/images/up2.jpg" class="card-img-top" alt="make-up01">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="#" class="carousel-link">JOE MALONE LONDON</a>
+            </h5>
+            <div class="status">NEW</div>
+            <div class="brand">JOE MALONE</div>
+            <div class="caruosel-bottom position-relative d-flex justify-content-between">
+              <div class="add-btn"><span class="iconify" data-icon="codicon:add" data-inline="false"></span></div>
+              <div class="product-price">$72</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Assets/images/up3.jpg" class="card-img-top" alt="make-up02">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="#" class="carousel-link">COCO MADEMOISELLE</a>
+            </h5>
+            <div class="status">NEW</div>
+            <div class="brand">NEXT</div>
+            <div class="caruosel-bottom position-relative d-flex justify-content-between">
+              <div class="add-btn"><span class="iconify" data-icon="codicon:add" data-inline="false"></span></div>
+              <div class="product-price">$189</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Assets/images/up4.jpg" class="card-img-top" alt="make-up03">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="#" class="carousel-link">COCO MADEMOISELLE</a>
+            </h5>
+            <div class="status">NEW</div>
+            <div class="brand">CHANNEL</div>
+            <div class="caruosel-bottom position-relative d-flex justify-content-between">
+              <div class="add-btn"><span class="iconify" data-icon="codicon:add" data-inline="false"></span></div>
+              <div class="product-price">$89</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <a href="#" class="carousel-control-links"><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+            data-inline="false"></span></a>
+        <a href="#" class="carousel-control-links-1"><span class="iconify" data-icon="dashicons:arrow-right-alt2"
+            data-inline="false"></span></a>
+      </div>
+  </section>
+
+    <!-- SKIN CARE SECTION -->
+    <section class="product-main">
+      <div class="perfume-product-main">
+        <div class="perfume-product-title">
+          <h3 class="perfume-product-heading mr-3 text-dark">
+            <span class="iconify" data-icon="whh:perfume" data-inline="false"></span>
+            Fragrance
+          </h3>
+          <p class="perfume-product-para">( Lorem ipsum dolor sit aes, officia eius aspernatur quia excepturi officiis
+            itaque! )</p>
+        </div>
+        <hr>
+      </div>
+
+      <!-- Carousel Section -->
+      <div class="carousel-main">
+        <div class="card">
+          <img src="./Assets/images/sk1.jpg" class="card-img-top" alt="skin-care">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="#" class="carousel-link">COCO MADEMOISELLE</a>
+            </h5>
+            <div class="status">NEW</div>
+            <div class="brand">CHANNEL</div>
+            <div class="caruosel-bottom position-relative d-flex justify-content-between">
+              <div class="add-btn"><span class="iconify" data-icon="codicon:add" data-inline="false"></span></div>
+              <div class="product-price">$89</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Assets/images/sk2.jpg" class="card-img-top" alt="skin-care01">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="#" class="carousel-link">JOE MALONE LONDON</a>
+            </h5>
+            <div class="status">NEW</div>
+            <div class="brand">JOE MALONE</div>
+            <div class="caruosel-bottom position-relative d-flex justify-content-between">
+              <div class="add-btn"><span class="iconify" data-icon="codicon:add" data-inline="false"></span></div>
+              <div class="product-price">$72</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Assets/images/sk4.jpg" class="card-img-top" alt="skin-care02">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="#" class="carousel-link">COCO MADEMOISELLE</a>
+            </h5>
+            <div class="status">NEW</div>
+            <div class="brand">NEXT</div>
+            <div class="caruosel-bottom position-relative d-flex justify-content-between">
+              <div class="add-btn"><span class="iconify" data-icon="codicon:add" data-inline="false"></span></div>
+              <div class="product-price">$189</div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="./Assets/images/sk3.jpg" class="card-img-top" alt="skin-care03">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="#" class="carousel-link">COCO MADEMOISELLE</a>
+            </h5>
+            <div class="status">NEW</div>
+            <div class="brand">CHANNEL</div>
+            <div class="caruosel-bottom position-relative d-flex justify-content-between">
+              <div class="add-btn"><span class="iconify" data-icon="codicon:add" data-inline="false"></span></div>
+              <div class="product-price">$89</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <a href="#" class="carousel-control-links"><span class="iconify" data-icon="dashicons:arrow-left-alt2"
+            data-inline="false"></span></a>
+        <a href="#" class="carousel-control-links-1"><span class="iconify" data-icon="dashicons:arrow-right-alt2"
+            data-inline="false"></span></a>
+      </div>
+  </section>
+  </main>
+  <!-- FOOTER SECTION -->
+  <footer class="footer-wrapper-main">
+    <div class="footer-wrapper">
+      <div class="f-w-1">
+        <a href="#" class="footer-logo main-logo-text text-dark">
+          <img src="./Assets/images/logo5.jpg" alt="logo5" class="main-logo">
+          Andrez
+        </a>
+        <p class="f-text">Lorem ipsum dolor sit amet olorum esse asperiores? Quibusdam molestias facere quaerat commodi
+          in, ipsum nostrum dolorem soluta? Fuga quos cumque ducimus illum?</p>
+      </div>
+      <div class="f-w-2">
+        <h5 class="f-w-2-header">Cartegories</h5>
+        <hr>
+        <div class="f-w-container-list">
+          <ul class="f-w-list">
+            <li class="f-w-item"><a href="#" class="f-links">Skin Care</a></li>
+            <li class="f-w-item"><a href="#" class="f-links">Make Up</a></li>
+            <li class="f-w-item"><a href="#" class="f-links">Fragrance</a></li>
+            <li class="f-w-item"><a href="#" class="f-links">Hair Care</a></li>
+            <li class="f-w-item"><a href="#" class="f-links">Bath & Body</a></li>
+          </ul>
+          <ul class="f-w-list">
+            <li class="f-w-item"><a href="#" class="f-links">Beauty Brands</a></li>
+            <li class="f-w-item"><a href="#" class="f-links">Natural Beauty & Wellness</a></li>
+            <li class="f-w-item"><a href="#" class="f-links">Gifts & Sets</a></li>
+            <li class="f-w-item"><a href="#" class="f-links">Face Moisturizers</a></li>
+            <li class="f-w-item"><a href="#" class="f-links">Eye Creams & Treatments</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="f-w-3">
+        <h5 class="f-w-2-header">Navigation</h5>
+        <hr>
+        <div class="f-w-container-list">
+          <ul class="f-w-list">
+            <li class="f-w-item"><a href="#" class="f-links">About Us</a></li>
+            <li class="f-w-item"><a href="#" class="f-links">Sign Up</a></li>
+            <li class="f-w-item"><a href="#" class="f-links">Sign In</a></li>
+            <li class="f-w-item"><a href="#" class="f-links">Services</a></li>
+            <li class="f-w-item"><a href="#" class="f-links">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="f-w-4">
+        <div class="f-w-country">
+          <h5 class="f-w-2-header">Country</h5>
+          <select name="country" id="country" class="country-d-d">
+            <option value="Nigeria" class="f-w-option">Nigeria</option>
+            <option value="Japan" class="f-w-option">Japan</option>
+            <option value="US" class="f-w-option">US</option>
+            <option value="England" class="f-w-option">England</option>
+          </select>
+        </div>
+        <div class="f-w-country">
+          <h5 class="f-w-2-header lang">Language</h5>
+          <select name="language" id="language" class="country-d-d">
+            <option value="English" class="f-w-option">English</option>
+            <option value="French" class="f-w-option">French</option>
+            <option value="Spanish" class="f-w-option">Spanish</option>
+            <option value="Portugees" class="f-w-option">Portugees</option>
+          </select>
+        </div>
+        <div class="f-w-country">
+          <h5 class="f-w-2-header">Currency</h5>
+          <select name="language" id="language-1" class="country-d-d">
+            <option value="English" class="f-w-option">USD</option>
+            <option value="French" class="f-w-option">Naira</option>
+            <option value="Spanish" class="f-w-option">Euro</option>
+            <option value="Portugees" class="f-w-option">YEN</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- FOTTER BOTTOM SECTION -->
+    <div class="bottom-main-footer">
+      <div class="main-bottom-wrap">
+        <div class="bottom-right">
+          Copyright © 2020 ANDREZ Beauty Stores All Rights Reserved. Built by
+          <a href="https://github.com/Davidosky007/Html-capstone">David Bassey</a>
+        </div>
+        <div class="bottom-left">
+          <ul class="social-list">
+            <li class="social-items"><a href="#"><span class="iconify" data-icon="bx:bxl-facebook"
+                  data-inline="false"></span></a></li>
+            <li class="social-items"><a href="#"><span class="iconify" data-icon="ant-design:twitter-outlined"
+                  data-inline="false"></span></a></li>
+            <li class="social-items"><a href="#"><span class="iconify" data-icon="feather:instagram"
+                  data-inline="false"></span></a></li>
+            <li class="social-items"><a href="#"><span class="iconify" data-icon="la:linkedin-in"
+                  data-inline="false"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

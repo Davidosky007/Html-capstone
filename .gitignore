@@ -1,0 +1,5 @@
+node_modules/
+*.json
+*.map
+*.config
+glide/
