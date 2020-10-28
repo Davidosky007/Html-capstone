@@ -320,12 +320,12 @@ select {
 }
 
 .hot-purchase-btn {
-  color: $color-white;
-  padding: 0 3.6rem;
+  color: #fff;
+  padding: -1px 3.6rem;
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  height: 2rem;
+  height: 2.5rem;
 }
 
 .hot-ad-arrow {
@@ -613,8 +613,8 @@ select {
   }
 
   .hot-purchase-btn {
-    color: $color-white;
-    padding: 0 2rem;
+    color: #fff;
+    padding: -1px 2rem;
     font-size: 1rem;
     display: flex;
     align-items: center;
