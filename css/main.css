@@ -12,31 +12,26 @@
   src: url("../Fonts/Gotham-Font/Gotham-Font/Gotham-Bold.otf") format("opentype"), url("../Fonts/Gotham-Font/Gotham-Font/GothamBold.ttf") format("truetype");
   font-weight: 600;
 }
-
 @font-face {
   font-family: "Gotham Rounded";
   src: url("../Fonts/Gotham_Rounded_Light/Gotham_Rounded_Light/Gotham-Rounded-Light.otf") format("opentype");
   font-weight: 300;
 }
-
 @font-face {
   font-family: "Nimbus Sans Light";
   src: url("../Fonts/Nimbus-Sans-D-OT-Light_32752.ttf") format("truetype");
   font-weight: 300;
 }
-
 @font-face {
   font-family: "Pragmatica Medium";
   src: url("../Fonts/PragmaticaMedium.otf") format("opentype");
   font-weight: 400;
 }
-
 @font-face {
   font-family: "Free Sans Bold";
   src: url("../Fonts/Nimbus-Sans-D-OT-Ultra-Light_32757.ttf") format("truetype");
   font-weight: 700;
 }
-
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -174,8 +169,8 @@ select {
 
 .search-dropdown {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: none;
   outline: none;
   line-height: 1;
@@ -192,8 +187,8 @@ select {
 .search-input {
   padding: 1rem 1rem 1rem 2.4rem;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   border: none;
   outline: none;
   margin-right: 1px;
@@ -485,8 +480,8 @@ select {
 
 .country-d-d {
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 3px;
@@ -622,7 +617,6 @@ select {
     line-height: 1.3rem;
   }
 }
-
 @media (max-width: 767.98px) {
   .search-area-form {
     display: flex;
