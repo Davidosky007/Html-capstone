@@ -450,11 +450,7 @@ select {
 .carousel-control-links {
   height: 100%;
   width: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   -webkit-box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
   box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
@@ -466,8 +462,6 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   -webkit-box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
   box-shadow: 0 0 8px rgba(56, 56, 56, 0.2);
